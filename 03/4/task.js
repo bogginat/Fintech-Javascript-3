@@ -6,7 +6,15 @@
  */
 
 function promiseRace(promises) {
-  return Promise.resolve(null);
+  const myPromise = new Promise((resolve, reject) => {
+    for (const promise of promises) {
+      // Так можно, потому что: "Когда промис переходит в состояние «выполнен» –
+      // с результатом (resolve) или ошибкой (reject) – это навсегда."
+      promise.then(resolve, reject);
+    }
+  });
+
+  return myPromise;
 }
 
 module.exports = promiseRace;
