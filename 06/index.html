@@ -2,28 +2,79 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100" >
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet/less" type="text/css" href="./main.less" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js" ></script>
     <title>Задание 6.1</title>
 </head>
 <body>
-<h1>Сверстать полную страницу (без футера).</h1>
-<h4>Макеты:</h4>
-<ul>
-    <li><a href="https://app.zeplin.io/project/58a307271a9f6d513890adc8/screen/58a307604687f0394b3ba039">Desktop 1</a></li>
-    <li><a href="https://app.zeplin.io/project/58a307271a9f6d513890adc8/screen/58a3075a4ec334e848d7f333">Desktop 2</a></li>
-    <li><a href="https://app.zeplin.io/project/58a307271a9f6d513890adc8/screen/58a3076d2fc6273f38fc51c5">Mobile 1</a></li>
-</ul>
-<h4>Особенности:</h4>
-<ul>
-    <li>Брейкпойнт для мобильной: 640px</li>
-    <li>До брейкпойнта верстка ломаться не должна, если ломается и никак иначе не избежать, ввести промежуточный брейкпойнт.</li>
-    <li>Использоваться БЭМ-нэйминг для классов.</li>
-    <li>Использовать less.</li>
-    <li>Повторяющиеся размера, цвета вынести в переменные.</li>
-    <li>Для элементов, у которых могут меняться состояние (цвет текста, бордер, фон, размер, позиция и тп), добавить transition.</li>
-    <li>Тултип также должен появляться с анимацией.</li>
-    <li>Для иконок использовать svg.</li>
-</ul>
+<div class="main">
+<div class="header__container">
+  <ul class="header__menu">
+    <li class="header__menu__item"><img src="header-logo.svg" class="HeaderLogo"></li>
+    <li class="header__menu__item"><div class="text">8 800 555-11-22</div></li>
+  </ul>
+</div>
+<div class="menu__container">
+  <ul class="menu">
+    <li class="menu__item"><a class="menu__link" alt="menu_link">КАРТЫ</a></li>
+    <li class="menu__item"><a class="menu__link" alt="menu_link">ВКЛАДЫ</a></li>
+    <li class="menu__item"><a class="menu__link" alt="menu_link">ПЛАТЕЖИ И ПЕРЕВОДЫ</a></li>
+    <li class="menu__item"><a class="menu__link" alt="menu_link">БОНУСЫ</a></li>
+    <li class="menu__item"><a class="menu__link" alt="menu_link">СТРАХОВАНИЕ</a></li>
+    <li class="menu__item"><a class="menu__link" alt="menu_link">О БАНКЕ</a></li>
+  </ul>
+</div>
+<div class="banner">
+  <div class="container">
+    <div class="container__image"></div>
+    <div class="content">
+      <div class="title">Карты для вас прямо сейчас</div>
+      <div class="subtitle">Выбирайте карту, пользуйтесь <br>удобными сервисами</div>
+      <span class="button">
+        <a alt="application" class="button__text">Оформить заявку</a>
+      </span>
+    </div>
+  </div>
+</div>
+<div class="title__categories fee">Любые категории платежей</div>
+<div class="tags__container"> 
+<div class="inner__tags__container" contenteditable="true">
+  <div class="item">
+    <div class="text">Кафе</div>
+    <img alt="cross" src="group-copy.svg" class="Group-Copy-4">
+  </div>
+  <div class="item">
+    <div class="text">Интернет</div>
+    <img alt="cross" src="group-copy.svg" class="Group-Copy-4">
+  </div>
+  <div class="item">
+    <div class="text">Телефон</div>
+    <img alt="cross" src="group-copy.svg" class="Group-Copy-4">
+  </div>
+  <div class="item">
+    <div class="text">Авто</div>
+    <img alt="cross" src="group-copy.svg" class="Group-Copy-4">
+  </div>
+  <div class="item">
+    <div class="text">ЖКХ</div>
+    <img alt="cross" src="group-copy.svg" class="Group-Copy-4">
+  </div>  
+  <div class="item">
+    <div class="text">Одежда и обувь</div>
+    <img alt="cross" src="group-copy.svg" class="Group-Copy-4">
+  </div>
+  <div class="item">
+    <div class="text">Супермаркеты, гастрономы, универмаги</div>
+    <img alt="cross" src="group-copy.svg" class="Group-Copy-4">
+  </div>
+  <div class="item" contenteditable="true"></div>
+</div>
+</div>
+<div class="title__categories fields">Заполните несколько<br>простых полей </div>
+</div>
 </body>
 </html>
