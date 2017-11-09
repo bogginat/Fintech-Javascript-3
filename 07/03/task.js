@@ -1,10 +1,15 @@
-/**
- * Исправьте проблему с таймером: должны выводиться числа от 0 до 9.
- * Доп. задание: предложите несколько вариантов решения.
- */
 function throttle(time, callback) {
-  return callback;
-}
+  let running = true;
 
+  return function() {
+    if (running) {
+      callback();
+      running = false;
+      setTimeout(function() {
+        running = true;
+      }, time);
+    }
+  };
+}
 
 module.exports = { throttle };

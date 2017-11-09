@@ -29,3 +29,4 @@ describe('throttle', () => {
     }, intervalTime - 50);
   });
 });
+
